@@ -10,8 +10,6 @@ const Price = ({ selectedOption }) => {
     navigate("/form");
   }
 
-  console.log(selectedOption);
-
   return selectedOption ? (
     <Box
       sx={{

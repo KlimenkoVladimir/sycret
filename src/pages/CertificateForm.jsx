@@ -76,7 +76,7 @@ const CertificateForm = () => {
         <CircularProgress />
       ) : (
         <>
-          <Typography sx={{ mb: 2 }} variant="h5" align="center">
+          <Typography sx={{ mt: 6, mb: 2 }} variant="h5" align="center">
             {selectedCertificate?.NAME}
           </Typography>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -124,8 +124,20 @@ const CertificateForm = () => {
                   {...register("EMAIL", { required: true })}
                 />
               </Grid>
-              <Grid item xs={12}>
-                <Button type="submit" variant="contained" color="primary">
+              <Grid
+                item
+                xs={12}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                  align="center"
+                >
                   Оформить
                 </Button>
               </Grid>

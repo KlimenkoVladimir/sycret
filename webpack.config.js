@@ -1,28 +1,28 @@
-const path = require("path"); // Подключаем модуль 'path' из Node.js
-const HtmlWebpackPlugin = require("html-webpack-plugin"); // Подключаем плагин
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js", // Указываем точку входа для webpack
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"), // Указываем путь для сохранения собранного бандла
-    filename: "bundle.js", // Указываем имя собранного файла
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/, // Указываем, что webpack должен обрабатывать файлы с расширениями .js и .jsx
-        exclude: /node_modules/, // Исключаем папку node_modules из обработки
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
         use: {
-          loader: "babel-loader", // Используем babel-loader для транспиляции кода
+          loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-react"], // Добавьте сюда пресет
+            presets: ["@babel/preset-react"],
           },
         },
       },
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"], // Указываем расширения файлов, которые webpack будет искать по умолчанию
+    extensions: [".js", ".jsx"],
   },
   plugins: [
     new HtmlWebpackPlugin({

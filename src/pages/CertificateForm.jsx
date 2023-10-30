@@ -61,7 +61,7 @@ const CertificateForm = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        maxHeight: "100vh",
       }}
     >
       <Button

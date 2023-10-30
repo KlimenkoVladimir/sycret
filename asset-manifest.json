@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/sycret/static/js/main.b42235af.js",
+    "main.js": "/sycret/static/js/main.0a041e82.js",
     "index.html": "/sycret/index.html",
-    "main.b42235af.js.map": "/sycret/static/js/main.b42235af.js.map"
+    "main.0a041e82.js.map": "/sycret/static/js/main.0a041e82.js.map"
   },
   "entrypoints": [
-    "static/js/main.b42235af.js"
+    "static/js/main.0a041e82.js"
   ]
 }

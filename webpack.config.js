@@ -1,10 +1,12 @@
 const path = require("path"); // Подключаем модуль 'path' из Node.js
+const HtmlWebpackPlugin = require("html-webpack-plugin"); // Подключаем плагин
 
 module.exports = {
   entry: "./src/index.js", // Указываем точку входа для webpack
   output: {
     path: path.resolve(__dirname, "dist"), // Указываем путь для сохранения собранного бандла
     filename: "bundle.js", // Указываем имя собранного файла
+    clean: true,
   },
   module: {
     rules: [
@@ -23,4 +25,20 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"], // Указываем расширения файлов, которые webpack будет искать по умолчанию
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      templateContent: `
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8" />
+            <title>My App</title>
+          </head>
+          <body>
+            <div id="root"></div>
+          </body>
+        </html>
+      `,
+    }),
+  ],
 };

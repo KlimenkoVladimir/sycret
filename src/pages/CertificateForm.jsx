@@ -66,7 +66,6 @@ const CertificateForm = () => {
     >
       <Button
         variant="contained"
-        // color="primary"
         sx={{ position: "absolute", top: 0, left: 0, margin: 2 }}
         startIcon={<ArrowBackIcon />}
         onClick={() => {

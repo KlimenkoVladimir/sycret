@@ -6,7 +6,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"), // Указываем путь для сохранения собранного бандла
     filename: "bundle.js", // Указываем имя собранного файла
-    clean: true,
   },
   module: {
     rules: [

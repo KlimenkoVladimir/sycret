@@ -4,7 +4,7 @@ import CertificatePayment from "./pages/CertificatePayment";
 
 export const routes = [
   {
-    path: "/",
+    path: "/sycret",
     element: <CertificateSelection />,
   },
 

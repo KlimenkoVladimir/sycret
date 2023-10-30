@@ -69,7 +69,7 @@ const CertificateForm = () => {
         sx={{ position: "absolute", top: 0, left: 0, margin: 2 }}
         startIcon={<ArrowBackIcon />}
         onClick={() => {
-          navigate("/");
+          navigate("/sycret");
         }}
       ></Button>
       {isLoading ? (
